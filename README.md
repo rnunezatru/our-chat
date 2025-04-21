@@ -66,7 +66,7 @@ Hard prerequisites
   - The install script will automatically pick the largest file system for install. If the largest file system is not mounted as `/` it will create /home and /var/lib/docker elsewhere, for example under /opt.
   - The machine should have Amazon Linux (tested AL2023), RHEL (tested Rocky 9.4) or Ubuntu (tested 24.04 LTS) installed. 
   - Note hat both ARM and X86 are supported. On AWS we recommend a Graviton/ARM instance (e.g. t4g.micro costs less than $6 per month)
-- You must be able to reach this server on http port 80 and https port 433.
+- You must be able to reach this server on http port 80 and https port 443.
 - The Server must have a DNS entry pointing to it. Take note of the hostname with domainname (FQDN)
 - AWS credentials (AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY) for an AWS service account (perhaps called librechat or ochat) that has no permissions except for the AmazonBedrockFullAccess policy attached to it. 
 - An SSL certificate (often a PKCS12 archive by IT), unless your http port 80 can be reached from the internet, which allows you to use Let's Encrypt.
